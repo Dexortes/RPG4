@@ -1,6 +1,6 @@
 package src.units;
 
-import items.*;
+import src.items.*;
 
 import java.util.Random;
 
@@ -105,7 +105,7 @@ public class Hero extends CombatUnit{
         if(item instanceof Pot){
             drinkPot(item);
         } else if (item instanceof Equipment){
-            arm(item);
+            weild(item);
         }
         removeFromBackpack();
     }
@@ -117,7 +117,7 @@ public class Hero extends CombatUnit{
         potion.setQuantity(potion.getQuantity() - 1);
         System.out.println(name + " выпил " + potion.name + ". Текущее здоровье " + health + "/" + maxHP);
     }
-    public void arm(Item equip){
+    public void weild(Item equip){
         if(equip instanceof Weapon){
             if(getWeapon() != null) {
                 putInBackPack(weapon);
@@ -150,6 +150,6 @@ public class Hero extends CombatUnit{
                 "\nСила: " + strength +
                 "\nЛовность: " + agility +
                 "\nУдача: " + luck +
-                "\nОружие: " + weapon + ", Броня: " + armor;
+                "\nОружие: " + weapon.name + ", Броня: " + armor.name;
     }
 }

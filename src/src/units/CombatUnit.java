@@ -1,7 +1,7 @@
 package src.units;
 
-import items.Armor;
-import items.Weapon;
+import src.items.Armor;
+import src.items.Weapon;
 
 abstract public class CombatUnit extends Unit {
 

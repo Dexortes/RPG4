@@ -1,6 +1,6 @@
 package src.units;
 
-import items.*;
+import src.items.*;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
-package src;
+package src.events;
 
-import items.Item;
-import units.Hero;
-import units.Merchant;
+import src.items.Item;
+import src.units.Hero;
+import src.units.Merchant;
 
 public class Trade {
     private final Hero hero;

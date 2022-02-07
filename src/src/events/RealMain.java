@@ -1,10 +1,10 @@
-package src;
+package src.events;
 
-import items.Armor;
-import items.Weapon;
-import units.*;
-import units.CombatUnit;
-import units.GeneratorUnits;
+import src.items.Armor;
+import src.items.Weapon;
+import src.units.*;
+import src.units.CombatUnit;
+import src.units.GeneratorUnits;
 
 import java.util.List;
 import java.util.Scanner;
@@ -104,8 +104,8 @@ public class RealMain {
         //Test-block for weapon and armor
         Armor armor = new Armor("Панцирь бедной черепахи", 25, 75, 1);
         Weapon weapon = new Weapon("Ржавый меч", 30, 100, 1);
-        hero.arm(weapon);
-        hero.arm(armor);
+        hero.weild(weapon);
+        hero.weild(armor);
 
         Battle battle = new Battle(hero, listMonster);
         battle.action();

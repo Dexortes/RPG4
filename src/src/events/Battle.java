@@ -1,7 +1,7 @@
-package src;
+package src.events;
 
-import units.CombatUnit;
-import units.Hero;
+import src.units.CombatUnit;
+import src.units.Hero;
 
 import java.util.List;
 import java.util.Random;
